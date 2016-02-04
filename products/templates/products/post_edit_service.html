@@ -2,6 +2,7 @@
 {% load crispy_forms_tags %}        
 {% load i18n %} 
 {% block content %} 
+{% load staticfiles %}
 <body>
 <div class="container-fluid" class="responsive" style="height: auto; width: auto; background-color: grey">
 <h1 style="color:white"><center><b>{% trans "Services Update " %}<b></center></h1><br>
@@ -11,7 +12,7 @@
 <div class="col-md-2">
   </div>
 <div class="col-md-8" style="padding:1px;border:1px groove SteelBlue; background-color:white">
-<center><b><h1>Edit Service Details</h1><b></center><hr>
+<center><b><h2>Edit Service Details</h2><b></center><hr>
 <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-9">
@@ -21,7 +22,7 @@
 <table>
 {{ form|crispy }}
 </table>
-<center><input type="image" src='{% static "img/update.png" %}' value="{% trans "Submit changes" %} &raquo;"/></center>
+<center><input type="image" src='{% static "img/update.png" %}' value='{% trans "Submit changes" %} &raquo;'/></center>
 </form></div></div></div></div><br><br>
 </div><br></div>
 
