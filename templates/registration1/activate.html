@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+{% load static %}
+<div class="container-fluid">
+<div class="jumbotron"><img src='{% static "img/snap/1fail.png" %}'  class='vertical-center'/>
+	</div>
+<p>{% trans "Account activation failed" %}</p>
+		</div>
+<p>See the <a href="{% url 'faq' %}">FAQ</a> for Quick Solution</p>
+</div>
+{% endblock %} 
